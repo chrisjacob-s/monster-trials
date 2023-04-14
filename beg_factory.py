@@ -6,6 +6,7 @@ from easy_ogre import EasyOgre
 
 class BeginnerFactory(EnemyFactory):
   def create_random_enemy(self):
+    ''' Randomly construct and return one of the easy enemies '''
     rand_enemy = random.randint(1, 3)
 
     if rand_enemy == 1:
